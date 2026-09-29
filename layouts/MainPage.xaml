@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="layouts.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+
+            <Label
+                Text="Layouts!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+             
+
+            <Button
+                x:Name="VerticalBtn"
+                Text="Vertical" 
+                SemanticProperties.Hint="Conocer  orientacion Vertical"
+                Clicked="VerticalBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="HorizontalBtn"
+                Text="horizontal" 
+                SemanticProperties.Hint="Conocer  orientacion horizontal"
+                Clicked="HorizontalBtn_Clicked"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="GridBtn"
+                Text="Grid" 
+                SemanticProperties.Hint="Conocer distribucion en Grid"
+                Clicked="GridBtn_Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="AbsoluteBtn"
+                Text="Absolute" 
+                SemanticProperties.Hint="Conocer distribucion Absolute"
+                Clicked="AbsoluteBtn_Clicked"
+                HorizontalOptions="Fill" />
+            <Button
+    x:Name="FlexBtn"
+    Text="Flex" 
+    SemanticProperties.Hint="Conocer distribucion Flex"
+    Clicked="FlexBtn_Clicked"
+    HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

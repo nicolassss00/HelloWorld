@@ -1,0 +1,11 @@
+<Solution>
+  <Project Path="eventos/elementos.csproj" Id="37a487c0-74a4-4ea4-84e1-7491b6f34969">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="HelloWorld/HelloWorld.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="layouts/layouts.csproj" Id="591a0f71-d478-4486-ae73-2e30aff50bee">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
