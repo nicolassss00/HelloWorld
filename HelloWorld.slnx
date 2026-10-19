@@ -8,4 +8,7 @@
   <Project Path="layouts/layouts.csproj" Id="591a0f71-d478-4486-ae73-2e30aff50bee">
     <Deploy Solution="Debug|*" />
   </Project>
+  <Project Path="Persistencia/Persistencia.csproj" Id="cb4050c8-58c7-498f-a524-8eb7c7a6129a">
+    <Deploy Solution="Debug|*" />
+  </Project>
 </Solution>
