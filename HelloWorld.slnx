@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="CollectionView/CollectionView.csproj" Id="af6ec044-81bf-410f-bc21-b002ca75bb83" />
   <Project Path="eventos/elementos.csproj" Id="37a487c0-74a4-4ea4-84e1-7491b6f34969">
     <Deploy Solution="Debug|*" />
   </Project>

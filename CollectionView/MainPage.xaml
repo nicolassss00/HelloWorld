@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CollectionView.MainPage">
+
+
+    <VerticalStackLayout Padding="30" Spacing="25">
+        <CollectionView x:Name="listapaises" VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*"/>
+                            <ColumnDefinition Width=".8*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Column="0" 
+                               Source="{Binding bandera}" 
+                               HeightRequest="50" 
+                               VerticalOptions="Center" />
+
+                
+                        <VerticalStackLayout Grid.Column="1" 
+                                             VerticalOptions="Center" 
+                                             Spacing="2">
+                            <Label Text="{Binding nombre}" 
+                                   FontAttributes="Bold" 
+                                   FontSize="16" />
+                            <Label Text="{Binding capital}" 
+                                   TextColor="Gray" 
+                                   FontSize="14" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+
+</ContentPage>
